@@ -31,84 +31,84 @@ $(document).ready(function(){
     $('#m1').on({
         'click': function(){
             sessionStorage.setItem("tp", 1);
-            window.location = 'search.html';
+            window.location = 'data.html';
         }
     })
 
     $('#m2').on({
         'click': function(){
             sessionStorage.setItem("tp", 2);
-            window.location = 'search.html';
+            window.location = 'data.html';
         }
     })
 
     $('#m3').on({
         'click': function(){
             sessionStorage.setItem("tp", 3);
-            window.location = 'search.html';
+            window.location = 'data.html';
         }
     })
 
     $('#m4').on({
         'click': function(){
             sessionStorage.setItem("tp", 4);
-            window.location = 'search.html';
+            window.location = 'data.html';
         }
     })
 
     $('#m5').on({
         'click': function(){
             sessionStorage.setItem("tp", 5);
-            window.location = 'search.html';
+            window.location = 'data.html';
         }
     })
 
     $('#m6').on({
         'click': function(){
             sessionStorage.setItem("tp", 6);
-            window.location = 'search.html';
+            window.location = 'data.html';
         }
     })
 
     $('#m7').on({
         'click': function(){
             sessionStorage.setItem("tp", 7);
-            window.location = 'search.html';
+            window.location = 'data.html';
         }
     })
 
     $('#m8').on({
         'click': function(){
             sessionStorage.setItem("tp", 8);
-            window.location = 'search.html';
+            window.location = 'data.html';
         }
     })
 
     $('#m9').on({
         'click': function(){
             sessionStorage.setItem("tp", 9);
-            window.location = 'search.html';
+            window.location = 'data.html';
         }
     })
 
     $('#m10').on({
         'click': function(){
             sessionStorage.setItem("tp", 10);
-            window.location = 'search.html';
+            window.location = 'data.html';
         }
     })
 
     $('#m11').on({
         'click': function(){
             sessionStorage.setItem("tp", 11);
-            window.location = 'search.html';
+            window.location = 'data.html';
         }
     })
 
     $('#m12').on({
         'click': function(){
             sessionStorage.setItem("tp", 12);
-            window.location = 'search.html';
+            window.location = 'data.html';
         }
     })
 
@@ -155,84 +155,84 @@ $(document).ready(function(){
     $('#a1').on({
         'click': function(){
             sessionStorage.setItem("ar", 1);
-            window.location = 'search.html';
+            window.location = 'data.html';
         }
     })
 
     $('#a2').on({
         'click': function(){
             sessionStorage.setItem("ar", 2);
-            window.location = 'search.html';
+            window.location = 'data.html';
         }
     })
 
     $('#a3').on({
         'click': function(){
             sessionStorage.setItem("ar", 3);
-            window.location = 'search.html';
+            window.location = 'data.html';
         }
     })
 
     $('#a4').on({
         'click': function(){
             sessionStorage.setItem("ar", 4);
-            window.location = 'search.html';
+            window.location = 'data.html';
         }
     })
 
     $('#a5').on({
         'click': function(){
             sessionStorage.setItem("ar", 5);
-            window.location = 'search.html';
+            window.location = 'data.html';
         }
     })
 
     $('#a6').on({
         'click': function(){
             sessionStorage.setItem("ar", 6);
-            window.location = 'search.html';
+            window.location = 'data.html';
         }
     })
 
     $('#a7').on({
         'click': function(){
             sessionStorage.setItem("ar", 7);
-            window.location = 'search.html';
+            window.location = 'data.html';
         }
     })
 
     $('#a8').on({
         'click': function(){
             sessionStorage.setItem("ar", 8);
-            window.location = 'search.html';
+            window.location = 'data.html';
         }
     })
 
     $('#a9').on({
         'click': function(){
             sessionStorage.setItem("ar", 9);
-            window.location = 'search.html';
+            window.location = 'data.html';
         }
     })
 
     $('#a10').on({
         'click': function(){
             sessionStorage.setItem("ar", 10);
-            window.location = 'search.html';
+            window.location = 'data.html';
         }
     })
 
     $('#a11').on({
         'click': function(){
             sessionStorage.setItem("ar", 11);
-            window.location = 'search.html';
+            window.location = 'data.html';
         }
     })
 
     $('#a12').on({
         'click': function(){
             sessionStorage.setItem("ar", 12);
-            window.location = 'search.html';
+            window.location = 'data.html';
         }
     })
 
@@ -274,27 +274,6 @@ $(document).ready(function(){
         $('#artistsearch').attr("value", "Frans Hals");
       }
     });
-
-    
-    $('#randomz').on({
-        'click': function(){
-           $('#z1').val(Math.round(Math.random()*10)/10)
-           $('#z2').val(Math.round(Math.random()*10)/10)
-           $('#z3').val(Math.round(Math.random()*10)/10)
-           $('#z4').val(Math.round(Math.random()*10)/10)
-           $('#z5').val(Math.round(Math.random()*10)/10)
-           $('#z6').val(Math.round(Math.random()*10)/10)
-           $('#z7').val(Math.round(Math.random()*10)/10)
-           $('#z8').val(Math.round(Math.random()*10)/10)
-           $('#z9').val(Math.round(Math.random()*10)/10)
-           $('#z10').val(Math.round(Math.random()*10)/10)
-           $('#z11').val(Math.round(Math.random()*10)/10)
-           $('#z12').val(Math.round(Math.random()*10)/10)
-           $('#z13').val(Math.round(Math.random()*10)/10)
-           $('#z14').val(Math.round(Math.random()*10)/10)
-           $('#z15').val(Math.round(Math.random()*10)/10)
-        }
-    })
 
     $('#loadportrait').on({
         'click': function(){
