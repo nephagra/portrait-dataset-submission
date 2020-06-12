@@ -34,13 +34,10 @@
 		<a class="navbar-brand" href="#" style="padding-left: 0.5rem; font-size: 25px;">
 			<i> The Portrait Dataset </i>
 		</a>
-
-		<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-			<div class="navbar-nav" style="font-size: 20px;">
-				<a class="nav-item nav-link" href="index.html">Home </a>
-				<a class="nav-item nav-link active" href="data.html">Data <span class="sr-only">(current)</span></a>
-				<a class="nav-item nav-link" href="contact.html">Contact</a>
-			</div>
+		<div class="navbar-nav ml-auto" style="font-size: 20px;">
+			<a class="nav-item nav-link" href="index.html">Home </a>
+			<a class="nav-item nav-link active" href="data.html">Data <span class="sr-only">(current)</span></a>
+			<a class="nav-item nav-link" href="contact.html">Contact</a>
 		</div>
 	</nav>
 
@@ -63,7 +60,7 @@
 		<div class="col-md-2">
 			<img src="https://static.thenounproject.com/png/632140-200.png" height="200" alt="">
 			<br> <br> <br> <br>
-			<a href="#" class="btn btn-light" style="display: grid; align-content: center;">Download Metadata (CSV)</a>
+			<a href="ThePortraitDataset.xlsx" class="btn btn-light" style="display: grid; align-content: center;">Download Metadata (CSV)</a>
 		</div>
 		<div class="col-md-2">
 		</div>
@@ -73,6 +70,89 @@
 			<a href="#" class="btn btn-light" style="display: grid; align-content: center;">Download Images (ZIP)</a>
 		</div>
 		<div class="col-md-3">
+		</div>
+	</div>
+
+	<div class="row" style="display: flex; flex-wrap: wrap; background-color: white; padding: 50px;">
+		<div class="col-md-3">
+		</div>
+		<div class="col-md-6" style="font-size: 20px;">
+			Below is a description of each field in the Portrait Dataset csv file:
+			<br>
+			<br>
+			<b><i>index</i></b> - The row index from 0 to 6885 of each portrait, the order the images show up in the .zip folder
+			<br>
+			<br>
+			<b><i>filename</i></b> - The file name of each portrait as it appears in the .zip folder
+			<br>
+			<br>
+			<b><i>title</i></b> - The title of the portrait from artstor
+			<br>
+			<br>
+			<b><i>full_year</i></b> - The year listed on artstor with moderate cleaning to extract the year from the full date, note some inconsistent formatting and date ranges for some portraits
+			<br>
+			<br>
+			<b><i>start_year</i></b> - The earliest possible year for portraits with a date range on artstor
+			<br>
+			<br>
+			<b><i>mid_year</i></b> - The midpoint year for portraits with a date range on artstor
+			<br>
+			<br>
+			<b><i>end_year</i></b> - The latest possible year for portraits with a date range on artstor
+			<br>
+			<br>
+			<b><i>circa</i></b> - 'yes' denotes portraits that have a circa indicator in the full_date field (ex. "c.", "ca.", "circa")
+			<br>
+			<br>
+			<b><i>continent</i></b> - The continent where the portrait originated
+			<br>
+			<br>
+			<b><i>country</i></b> - The country where the portrait originated
+			<br>
+			<br>
+			<b><i>artstor_url</i></b> - The link to the artstor listing
+			<br>
+			<br>
+			<b><i>image_url</i></b> - The link to the image thumbnail
+			<br>
+			<br>
+			<b><i>artstor_artist</i></b> - The artist from the artstor listing with moderate cleaning
+			<br>
+			<br>
+			<b><i>first_artist</i></b> - The first or only artist of the portrait
+			<br>
+			<br>
+			<b><i>second_artist</i></b> - If applicable, the second artist of the portrait
+			<br>
+			<br>
+			<b><i>notes</i></b> - If applicable, non-essential notes about the artist(s)
+			<br>
+			<br>
+			<b><i>attributed_to</i></b> - If applicable, the artist the portrait is attributed to
+			<br>
+			<br>
+			<b><i>attributed_to_2</i></b> - If applicable, the second artist the portrait is attributed to
+			<br>
+			<br>
+			<b><i>attributed_to_3</i></b> - If applicable, the third artist the portrait is attributed to
+			<br>
+			<br>
+			<b><i>copy_of</i></b> - If applicable, the original artist that the current portrait is a copy of
+			<br>
+			<br>
+			<b><i>in_style_of</i></b> - If applicable, the original artist that the current portrait is in the style of
+			<br>
+			<br>
+			<b><i>workshop_of</i></b> - If applicable, the artist of the workshop where this portrait was created
+			<br>
+			<br>
+			<b><i>circle_of</i></b> - If applicable, the circle of the artist where this portrait was created
+			<br>
+			<br>
+			<br>
+			<br>
+			
+
 		</div>
 	</div>
 
