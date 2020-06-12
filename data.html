@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<style>
+
+		.navbar-expand-lg .navbar-nav .nav-link {
+			padding-right: 1rem;
+			padding-left: 1rem;
+		}
+
+		hr {
+			display: block;
+			height: 1px;
+			border: 0;
+			border-top: 1px solid #ccc;
+			margin: 0;
+			padding: 0;
+			color: white;
+		}
+
+	</style>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+	<script lang="javascript" src="js/xlsx.full.min.js"></script>
+	<script type='text/javascript' src='js/source.js'></script>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="https://www.grasp.upenn.edu/">
+			<img src="https://philosophy.sas.upenn.edu/sites/philosophy.sas.upenn.edu/files/default_images/profile-default.png" height="50" alt="">
+		</a>
+		<a class="navbar-brand" href="#" style="padding-left: 0.5rem; font-size: 25px;">
+			<i> The Portrait Dataset </i>
+		</a>
+
+		<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+			<div class="navbar-nav" style="font-size: 20px;">
+				<a class="nav-item nav-link" href="index.html">Home </a>
+				<a class="nav-item nav-link active" href="data.html">Data <span class="sr-only">(current)</span></a>
+				<a class="nav-item nav-link" href="search.html">Search</a>
+				<a class="nav-item nav-link" href="app.html">Applications</a>
+				<a class="nav-item nav-link" href="contact.html">Contact</a>
+			</div>
+		</div>
+	</nav>
+
+ 	<meta name="author" content="Nephele Agrafiotis">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="background-color: white;">
+	
+	<div class="row" style="display: flex; flex-wrap: wrap; background-color: white;">
+		<div class="col-md-12">
+			<p style="padding-top: 75px; font-size: 40px; color: #1d2452; text-align: center; letter-spacing: 0.15em;"> 
+				<i>DOWNLOAD DATASET</i>
+			</p>
+		</div>
+	</div>
+	<div class="row" style="display: flex; flex-wrap: wrap; background-color: white; padding: 50px;">
+		<div class="col-md-3">
+		</div>
+		<div class="col-md-2">
+			<img src="https://static.thenounproject.com/png/632140-200.png" height="200" alt="">
+			<br> <br> <br> <br>
+			<a href="#" class="btn btn-light" style="display: grid; align-content: center;">Download Metadata (CSV)</a>
+		</div>
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-2">
+			<img src="http://cdn.onlinewebfonts.com/svg/img_518799.png" height="200" alt="">
+			<br> <br> <br> <br>
+			<a href="#" class="btn btn-light" style="display: grid; align-content: center;">Download Images (ZIP)</a>
+		</div>
+		<div class="col-md-3">
+		</div>
+	</div>
+
+
+</body>
+
+<footer class="page-footer font-small" style="background: #1d2452; padding-top: 5px; padding-bottom: 5px;">
+	<div class="container-fluid" style="margin: 10px;">
+		<div class="row mt-3">
+			<div class="col-md-7">
+				<img src="https://www.grasp.upenn.edu/sites/default/files/grasp_logo2_white.png" style="width: 220px; align-content: left;">
+			</div>
+			<div class="col-md-3">
+				<h6 class="text-uppercase font-weight-bold" style="color: white;">Authors</h6>
+				<div class="row">
+					<div class="col-md-6">
+						<p style="color: white; font-size: 15px; margin: 2px;"> Bernadette Bucher </p>
+						<p style="color: white; font-size: 15px; margin: 2px;"> Sadat Shaik </p>
+						<p style="color: white; font-size: 15px; margin: 2px;"> Stephen Phillips </p>
+					</div>
+					<div class="col-md-6">
+						<p style="color: white; font-size: 15px; margin: 2px;"> Nephele Agrafiotis </p>
+						<p style="color: white; font-size: 15px; margin: 2px;"> William Schmenner </p>
+						<p style="color: white; font-size: 15px; margin: 2px;"> Kostas Daniilidis </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<h6 class="text-uppercase font-weight-bold" style="color: white;">Contact</h6>
+				<p style="color: white; font-size: 15px; margin: 2px;"> bucherb@seas.upenn.edu </p>
+				<p style="color: white; font-size: 15px; margin: 2px;"> Bernadette Bucher </p>
+				<p style="color: white; font-size: 15px; margin: 2px;"> UPenn GRASP Lab </p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<style>
+
+		.navbar-expand-lg .navbar-nav .nav-link {
+			padding-right: 1rem;
+			padding-left: 1rem;
+		}
+
+		hr {
+			display: block;
+			height: 1px;
+			border: 0;
+			border-top: 1px solid #ccc;
+			margin: 0;
+			padding: 0;
+			color: white;
+		}
+
+	</style>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+	<script lang="javascript" src="js/xlsx.full.min.js"></script>
+	<script type='text/javascript' src='js/source.js'></script>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="https://www.grasp.upenn.edu/">
+			<img src="https://philosophy.sas.upenn.edu/sites/philosophy.sas.upenn.edu/files/default_images/profile-default.png" height="50" alt="">
+		</a>
+		<a class="navbar-brand" href="#" style="padding-left: 0.5rem; font-size: 25px;">
+			<i> The Portrait Dataset </i>
+		</a>
+
+		<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+			<div class="navbar-nav" style="font-size: 20px;">
+				<a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+				<a class="nav-item nav-link" href="data.html">Data</a>
+				<a class="nav-item nav-link" href="search.html">Search</a>
+				<a class="nav-item nav-link" href="app.html">Applications</a>
+				<a class="nav-item nav-link" href="contact.html">Contact</a>
+			</div>
+		</div>
+	</nav>
+
+ 	<meta name="author" content="Nephele Agrafiotis">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="background-color: white;">
+	<div class="row" style="display: flex; flex-wrap: wrap; background-color: white;">
+		<div class="col-md-12">
+			<p style="padding-top: 75px; font-size: 40px; color: #1d2452; text-align: center; letter-spacing: 0.15em;"> 
+				<i>MOVEMENTS</i>
+			</p>
+		</div>
+	</div>
+	<div class="row" style="display: flex; flex-wrap: wrap; background-color: white; padding: 50px;">
+		<div class="col-md-12">
+			<div class="row" style="padding: 10px; display: flex; flex-wrap: wrap; justify-content: center;">
+				<div class="card" style="width: 10rem; padding: 10px; border: none;">
+					<img src="Images/display1.jpeg" class="card-img-top" onclick="this.src=loadPortraitImg('medieval')" />
+					<div class="card-body">
+						<a id="m1" class="btn btn-light" style="display: grid; align-content: center; font-size: 80%;" >Medieval</a>
+					</div>
+				</div>
+				<div class="card" style="width: 10rem; padding: 10px; border: none;">
+					<img src="Images/display2.jpeg" class="card-img-top">
+					<div class="card-body">
+						<a id="m2" class="btn btn-light" style="display: grid; align-content: center; font-size: 80%;">Early Renaissance</a>
+					</div>
+				</div>
+				<div class="card" style="width: 10rem; padding: 10px; border: none;">
+					<img src="Images/display3.jpeg" class="card-img-top">
+					<div class="card-body">
+						<a id="m3" class="btn btn-light" style="display: grid; align-content: center; font-size: 80%;">High Renaissance</a>
+					</div>
+				</div>
+				<div class="card" style="width: 10rem; padding: 10px; border: none;">
+					<img src="Images/display4.jpeg" class="card-img-top">
+					<div class="card-body">
+						<a id="m4" class="btn btn-light" style="display: grid; align-content: center; font-size: 80%;">Late Renaissance</a>
+					</div>
+				</div>
+				<div class="card" style="width: 10rem; padding: 10px; border: none;">
+					<img src="Images/display5.jpeg" class="card-img-top">
+					<div class="card-body">
+						<a id="m5" class="btn btn-light" style="display: grid; align-content: center; font-size: 80%;">Baroque</a>
+					</div>
+				</div>
+				<div class="card" style="width: 10rem; padding: 10px; border: none;">
+					<img src="Images/display6.jpeg" class="card-img-top">
+					<div class="card-body">
+						<a id="m6" class="btn btn-light" style="display: grid; align-content: center; font-size: 80%;">Neoclassicism</a>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="padding: 10px; display: flex; flex-wrap: wrap; justify-content: center;">
+				<div class="card" style="width: 10rem; padding: 10px; border: none;">
+					<img src="Images/display7.jpeg" class="card-img-top">
+					<div class="card-body">
+						<a id="m7" class="btn btn-light" style="display: grid; align-content: center; font-size: 80%;">Romanticism</a>
+					</div>
+				</div>
+				<div class="card" style="width: 10rem; padding: 10px; border: none;">
+					<img src="Images/display8.jpeg" class="card-img-top">
+					<div class="card-body">
+						<a id="m8" class="btn btn-light" style="display: grid; align-content: center; font-size: 80%;">Realism</a>
+					</div>
+				</div>
+				<div class="card" style="width: 10rem; padding: 10px; border: none;">
+					<img src="Images/display9.jpeg" class="card-img-top">
+					<div class="card-body">
+						<a id="m9" class="btn btn-light" style="display: grid; align-content: center; font-size: 80%;">Impressionism</a>
+					</div>
+				</div>
+				<div class="card" style="width: 10rem; padding: 10px; border: none;">
+					<img src="Images/display10.jpeg" class="card-img-top">
+					<div class="card-body">
+						<a id="m10" class="btn btn-light" style="display: grid; align-content: center; font-size: 80%;">Post Impressionism</a>
+					</div>
+				</div>
+				<div class="card" style="width: 10rem; padding: 10px; border: none;">
+					<img src="Images/display11.jpeg" class="card-img-top">
+					<div class="card-body">
+						<a id="m11" class="btn btn-light" style="display: grid; align-content: center; font-size: 80%;">Modernism</a>
+					</div>
+				</div>
+				<div class="card" style="width: 10rem; padding: 10px; border: none;">
+					<img src="Images/display12.jpeg" class="card-img-top">
+					<div class="card-body">
+						<a id="m12" class="btn btn-light" style="display: grid; align-content: center; font-size: 80%;">Post Modernism</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row" style="display: flex; flex-wrap: wrap; background-color: white;">
+		<div class="col-md-12">
+			<p style="font-size: 40px; color: #1d2452; text-align: center; letter-spacing: 0.15em;"> 
+				<i>ARTISTS</i>
+			</p>
+		</div>
+	</div>
+	<div class="row" style="display: flex; flex-wrap: wrap; background-color: white; padding: 50px;">
+		<div class="col-md-12">
+			<div class="row" style="padding: 10px; display: flex; flex-wrap: wrap; justify-content: center;">
+				<div class="card" style="width: 10rem; padding: 10px; border: none;">
+					<img src="Images/display13.jpeg" class="card-img-top">
+					<div class="card-body">
+						<a id="a1" class="btn btn-light" style="display: grid; align-content: center; font-size: 80%;">Rembrandt</a>
+					</div>
+				</div>
+				<div class="card" style="width: 10rem; padding: 10px; border: none;">
+					<img src="Images/display14.jpeg" class="card-img-top">
+					<div class="card-body">
+						<a id="a2" class="btn btn-light" style="display: grid; align-content: center; font-size: 80%;">Titian</a>
+					</div>
+				</div>
+				<div class="card" style="width: 10rem; padding: 10px; border: none;">
+					<img src="Images/display15.jpeg" class="card-img-top">
+					<div class="card-body">
+						<a id="a3" class="btn btn-light" style="display: grid; align-content: center; font-size: 80%;">van Gogh</a>
+					</div>
+				</div>
+				<div class="card" style="width: 10rem; padding: 10px; border: none;">
+					<img src="Images/display16.jpeg" class="card-img-top">
+					<div class="card-body">
+						<a id="a4" class="btn btn-light" style="display: grid; align-content: center; font-size: 80%;">Cezanne</a>
+					</div>
+				</div>
+				<div class="card" style="width: 10rem; padding: 10px; border: none;">
+					<img src="Images/display17.jpeg" class="card-img-top">
+					<div class="card-body">
+						<a id="a5" class="btn btn-light" style="display: grid; align-content: center; font-size: 80%;">Modigliani</a>
+					</div>
+				</div>
+				<div class="card" style="width: 10rem; padding: 10px; border: none;">
+					<img src="Images/display18.jpeg" class="card-img-top">
+					<div class="card-body">
+						<a id="a6" class="btn btn-light" style="display: grid; align-content: center; font-size: 80%;">Manet</a>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="padding: 10px; display: flex; flex-wrap: wrap; justify-content: center;">
+				<div class="card" style="width: 10rem; padding: 10px; border: none;">
+					<img src="Images/display19.jpeg" class="card-img-top">
+					<div class="card-body">
+						<a id="a7" class="btn btn-light" style="display: grid; align-content: center; font-size: 80%;">Raphael</a>
+					</div>
+				</div>
+				<div class="card" style="width: 10rem; padding: 10px; border: none;">
+					<img src="Images/display20.jpeg" class="card-img-top">
+					<div class="card-body">
+						<a id="a8" class="btn btn-light" style="display: grid; align-content: center; font-size: 80%;">Renoir</a>
+					</div>
+				</div>
+				<div class="card" style="width: 10rem; padding: 10px; border: none;">
+					<img src="Images/display21.jpeg" class="card-img-top">
+					<div class="card-body">
+						<a id="a9" class="btn btn-light" style="display: grid; align-content: center; font-size: 80%;">Tintoretto</a>
+					</div>
+				</div>
+				<div class="card" style="width: 10rem; padding: 10px; border: none;">
+					<img src="Images/display22.jpeg" class="card-img-top">
+					<div class="card-body">
+						<a id="a10" class="btn btn-light" style="display: grid; align-content: center; font-size: 80%;">Degas</a>
+					</div>
+				</div>
+				<div class="card" style="width: 10rem; padding: 10px; border: none;">
+					<img src="Images/display23.jpeg" class="card-img-top">
+					<div class="card-body">
+						<a id="a11" class="btn btn-light" style="display: grid; align-content: center; font-size: 80%;">Gauguin</a>
+					</div>
+				</div>
+				<div class="card" style="width: 10rem; padding: 10px; border: none;">
+					<img src="Images/display24.jpeg" class="card-img-top">
+					<div class="card-body">
+						<a id="a12" class="btn btn-light" style="display: grid; align-content: center; font-size: 80%;">Frans Hals</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row" style="display: flex; flex-wrap: wrap; background-color: white;">
+		<div class="col-md-12">
+			<p style="font-size: 40px; color: #1d2452; text-align: center; letter-spacing: 0.15em;"> 
+				<i>MAP OR ORIGINS</i>
+			</p>
+		</div>
+	</div>
+	<div class="row" style="display: flex; flex-wrap: wrap; background-color: white; justify-content: center;">
+        <img src="Images/maps.png" alt="Map of Europe" style="width: 60%; height: auto; padding-top: 50px; padding-bottom: 75px;" />
+    </div>
+</body>
+
+
+<footer class="page-footer font-small" style="background: #1d2452; padding-top: 5px; padding-bottom: 5px;">
+	<div class="container-fluid" style="margin: 10px;">
+		<div class="row mt-3">
+			<div class="col-md-7">
+				<img src="https://www.grasp.upenn.edu/sites/default/files/grasp_logo2_white.png" style="width: 220px; align-content: left;">
+			</div>
+			<div class="col-md-3">
+				<h6 class="text-uppercase font-weight-bold" style="color: white;">Authors</h6>
+				<div class="row">
+					<div class="col-md-6">
+						<p style="color: white; font-size: 15px; margin: 2px;"> Bernadette Bucher </p>
+						<p style="color: white; font-size: 15px; margin: 2px;"> Sadat Shaik </p>
+						<p style="color: white; font-size: 15px; margin: 2px;"> Stephen Phillips </p>
+					</div>
+					<div class="col-md-6">
+						<p style="color: white; font-size: 15px; margin: 2px;"> Nephele Agrafiotis </p>
+						<p style="color: white; font-size: 15px; margin: 2px;"> William Schmenner </p>
+						<p style="color: white; font-size: 15px; margin: 2px;"> Kostas Daniilidis </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<h6 class="text-uppercase font-weight-bold" style="color: white;">Contact</h6>
+				<p style="color: white; font-size: 15px; margin: 2px;"> bucherb@seas.upenn.edu </p>
+				<p style="color: white; font-size: 15px; margin: 2px;"> Bernadette Bucher </p>
+				<p style="color: white; font-size: 15px; margin: 2px;"> UPenn GRASP Lab </p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</html>
